@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color: gray;
+    --accent-color-100: orange;
+    --accent-color-200: #4b4b4b;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.calc-container {
+    background-color: var(--primary-color);
+    width: 600px;
+    padding: 0 1em;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.calc-display {
+    padding: 6em 1em 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.calc-display span {
+    text-align: end;
+    font-size: 8rem;
+    color: white;
+}
+
+.btns-container {
+    display: flex;
+}
+
+
+button {
+    font-size: 5rem;
+    padding: .5em;
+    border-radius: 50%;
+    width: 130px;
+    border: none;
+    outline: none;
+    margin: .1em;
+    text-align: center;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+.primary-btn {
+    color: var(--secondary-color);
+    background: var(--accent-color-200);
+}
+
+.right-btns button{
+    color: var(--secondary-color);
+    background: var(--accent-color-100);
+}
+
+.span-two {
+    width: 62%;
+    border-radius: 100px;
+}
+
+.calc-display .result {
+    font-size: 4.5rem;
+    padding: .1em;
+    /* color: var(--secondary-color); */
+    /* color: var(--tertiary-color); */
+    /* color: var(--accent-color-200); */
+    color: var(--tertiary-color);
+}
